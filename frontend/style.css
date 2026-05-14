@@ -1,0 +1,95 @@
+/* frontend/style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    padding: 24px;
+}
+h1 {
+    font-size: 28px;
+    margin-bottom: 24px;
+    text-align: center;
+    color: #2c3e50;
+}
+.auth-tabs {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.auth-tabs button {
+    background: none;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #7f8c8d;
+}
+.auth-tabs button.active {
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+}
+.auth-form {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+.auth-form.active {
+    display: flex;
+}
+input, textarea, button {
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+button:hover {
+    background-color: #2980b9;
+}
+.card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 24px;
+    border-left: 4px solid #3498db;
+}
+#answer-text {
+    background: white;
+    padding: 12px;
+    border-radius: 6px;
+    margin: 12px 0;
+    white-space: pre-wrap;
+}
+#sources-list {
+    background: #f1f1f1;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 13px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+.source-item {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    margin-bottom: 6px;
+}
+.source-score {
+    color: #e67e22;
+    font-weight: bold;
+}

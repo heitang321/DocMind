@@ -1,0 +1,8 @@
+# .gitignore - 告诉 Git 哪些文件不要提交
+venv/
+.env
+__pycache__/
+*.pyc
+.DS_Store
+uploads/
+faiss_indexes/

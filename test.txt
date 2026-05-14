@@ -1,0 +1,6 @@
+这是 DocMind 知识库的测试文档。
+
+FastAPI 是一个现代 Python Web 框架，基于 Starlette 和 Pydantic，性能极高。
+它支持异步编程，自动生成 API 文档，非常适合构建 RESTful 服务。
+
+RAG（检索增强生成）是一种结合检索和生成的技术，可以从知识库中召回相关文本块，辅助大模型回答。

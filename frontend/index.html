@@ -1,0 +1,61 @@
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocMind - 智能知识库问答系统</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📚 DocMind 知识库问答</h1>
+
+        <!-- 认证区域：登录 / 注册切换 -->
+        <div id="auth-section">
+            <div class="auth-tabs">
+                <button id="login-tab" class="active">登录</button>
+                <button id="register-tab">注册</button>
+            </div>
+            <div id="login-form" class="auth-form active">
+                <input type="text" id="login-username" placeholder="用户名">
+                <input type="password" id="login-password" placeholder="密码">
+                <button id="login-btn">登录</button>
+                <div id="login-message"></div>
+            </div>
+            <div id="register-form" class="auth-form">
+                <input type="text" id="reg-username" placeholder="用户名">
+                <input type="email" id="reg-email" placeholder="邮箱">
+                <input type="password" id="reg-password" placeholder="密码">
+                <button id="register-btn">注册</button>
+                <div id="register-message"></div>
+            </div>
+        </div>
+
+        <!-- 主应用区域（登录后显示） -->
+        <div id="app-main" style="display: none;">
+            <!-- 文件上传 -->
+            <div class="card">
+                <h3>📄 上传文档</h3>
+                <input type="file" id="file-input" accept=".txt,.md">
+                <button id="upload-btn">上传并索引</button>
+                <div id="upload-status"></div>
+            </div>
+
+            <!-- 问答 -->
+            <div class="card">
+                <h3>❓ 提问</h3>
+                <textarea id="question" rows="3" placeholder="输入您的问题..."></textarea>
+                <button id="ask-btn">提问</button>
+                <div id="answer-area">
+                    <h4>答案：</h4>
+                    <div id="answer-text"></div>
+                    <h4>参考资料：</h4>
+                    <div id="sources-list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/app.js"></script>
+</body>
+</html>

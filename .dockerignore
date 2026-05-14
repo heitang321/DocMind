@@ -1,0 +1,16 @@
+venv
+.venv
+__pycache__
+*.pyc
+.env
+.git
+.claude
+uploads
+faiss_indexes
+*.md
+docker-compose.yml
+docker-compose
+test*.txt
+test*.py
+init_db.py
+reset_db.py

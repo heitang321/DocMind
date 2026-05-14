@@ -1,0 +1,11 @@
+FastAPI 是一个现代、快速的（高性能）Web 框架，用于构建 Python API。它基于标准 Python 类型提示，支持异步编程，自动生成交互式 API 文档（Swagger UI 和 ReDoc）。FastAPI 的主要特性包括：高性能（与 NodeJS 和 Go 相当）、快速开发代码、较少的 bug、易于使用。
+
+Python 是一种高级编程语言，以简洁易读的语法著称。它广泛应用于 Web 开发、数据分析、人工智能、自动化脚本等领域。Python 拥有丰富的第三方库，如 NumPy、Pandas、TensorFlow 等，使得科学计算和机器学习变得简单。
+
+SQLAlchemy 是 Python 社区中最流行的 ORM（对象关系映射）库。它支持多种数据库后端，如 SQLite、MySQL、PostgreSQL。SQLAlchemy 提供了两种主要的使用模式：Core 和 ORM。Core 提供 SQL 表达式语言，ORM 则允许开发者使用 Python 对象操作数据库。
+
+RAG（检索增强生成）是一种结合信息检索和大语言模型的技术。RAG 通过从外部知识库中检索相关文档片段，并将其作为上下文传递给生成模型，从而减少幻觉并提高回答的准确性。典型的 RAG 系统包括文档分块、向量化、索引构建和检索生成模块。
+
+FAISS 是由 Facebook AI Research 开发的高效相似性搜索库。它支持在海量向量数据中进行快速最近邻搜索，常用于推荐系统、图像检索和 RAG 系统中的向量检索。FAISS 提供了多种索引类型，如 Flat、IVF、HNSW 等，用户可以根据精度和速度需求选择。
+
+JWT（JSON Web Token）是一种用于身份认证的开放标准。JWT 由三部分组成：Header、Payload 和 Signature。在 Web 开发中，用户登录后服务器返回一个 JWT，客户端将其存储在 localStorage 或 Cookie 中，并在后续请求的 Authorization 头部携带该令牌，从而维持用户状态。
