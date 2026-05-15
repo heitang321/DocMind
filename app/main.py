@@ -4,10 +4,16 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.api.v1.endpoints import auth, documents,qa
+from app.models.database import Base, engine
 from fastapi.staticfiles import StaticFiles
 import os
 
 app = FastAPI(title="DocMind API", version="1.0.0")
+
+@app.on_event("startup")
+async def init_db():
+    async with engine.begin() as conn:
+        await conn.run_sync(Base.metadata.create_all)
 
 # 配置 CORS（允许前端跨域访问，后面会用到）
 app.add_middleware(
